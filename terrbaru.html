@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: black;
+      padding: 10px;
+      color: white;
+
+    }
+    
+  .carousel-inner img {
+      width: 50%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"href="#">List Drama<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Terbaru</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="#">Rating Rendah</a></li>
+          </ul>
+        </li>
+      
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <form>
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+            </form>
+          </ul>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br>
+
+<div class="container">  
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="8.jpeg" class="img-responsive" style="width:100%" alt="Image">
+      <br> <br>
+      <div class="thumbnail">
+       <h3> Record Of Youth </h3>
+       <p>Drama ini menceritakan tentang Sa Hye Jun (Park Bo Gum), seorang laki-laki yang berprofesi sebagai model namun juga bekerja paruh waktu di berbagai bidang. Selain Hye Jun, teman masa kecilnya Won Hae Hyo (Byeon Woo Seok) juga merupakan seorang model yang kini ingin merambah ke dunia akting. Sayangnya, latar belakang dan status ekonomi keluarga yang berbeda memberikan kesempatan hidup yang berbeda pula bagi keduanya.</p>
+      </div>
+    </div>   
+
+    <div class="col-sm-4">
+      <img src="9.jpeg" class="img-responsive" style="width:100%" alt="Image">
+      <br> <br>
+      <div class="thumbnail">
+       <h3> Backstreet Rokkie </h3>
+       <p>Backstreet Rookie menceritakan tentang Choi Dae Hyun (Ji Chang Wook) yang berpapasan dengan sekelompok siswi SMA, termasuk Jung Saet Byeol (Kim Yoo Jung). Saet Byeol tampak seperti gadis pembuat onar. Ia bahkan meminta Dae Hyun membelikan mereka rokok di sebuah toko.</p>
+      </div>
+    </div>  
+
+    <div class="col-sm-4">
+      <img src="4.jpeg" class="img-responsive" style="width:100%" alt="Image">
+      <br> <br>
+      <div class="thumbnail">
+       <h3> The King Eternal Monorach </h3>
+       <p>Bercerita tentang seorang kaisar Korea bernama Lee Gon (Lee Min-ho) yang mencoba untuk menutup pintu ke dunia paralel yang dibuka oleh iblis yang dilepaskan oleh dewa ke dunia manusia dan seorang detektif bernama Jung Tae-eul (Kim Go- eun) yang mencoba melindungi banyak orang dan seseorang yang ia cintai.</p>
+      </div> 
+    </div>
+
+    <div class="col-sm-4">
+      <img src="7.jpeg" class="img-responsive" style="width:100%" alt="Image">
+      <br> <br>
+      <div class="thumbnail">
+       <h3> Crash Landing On You </h3>
+       <p>Yoon Se-ri (Son Ye-jin) adalah seorang pewaris konglomerat di Korea Selatan. Suatu hari, saat paralayang, kecelakaan yang disebabkan oleh angin kencang membuat Se-ri melakukan pendaratan darurat di Korea Utara. Di sana, ia bertemu dengan Ri Jeong-hyuk (Hyun Bin), seorang perwira tinggi Korea Utara.</p>
+      </div>
+    </div>
+
+     <div class="col-sm-4"> 
+      <img src="6.jpeg" class="img-responsive" style="width:100%" alt="Image">
+      <br> <br> 
+      <div class="thumbnail">
+       <h3> Its Okay Not To Be Okay </h3>
+       <p>Moon Gang-tae (Kim Soo-hyun), seorang pekerja kesehatan komunitas di bangsal psikiatri yang tidak punya waktu untuk cinta dan Ko Moon-young (Seo Ye-ji), seorang penulis buku anak-anak sukses yang menderita gangguan kepribadian antisosial dan tidak pernah mengenal cinta. Setelah bertemu, keduanya perlahan mulai menyembuhkan luka emosional satu sama lain. Di sepanjang serinya, hal lain juga mulai terungkap tentang kebenaran masa lalu mereka yang telah menghantui hidup mereka.</p>
+      </div> 
+    </div>
+
+     <div class="col-sm-4">
+      <img src="10.jpeg" class="img-responsive" style="width:100%" alt="Image">
+      <br> <br>
+      <div class="thumbnail">
+       <h3> The World Of The Merried </h3>
+       <p>Drama ini mengangkat kehidupan pasangan suami istri, keluarga, dan karier. Ji Sun-woo (Kim Hee-ae) adalah seorang dokter keluarga. Dia menikah dengan Lee Tae-oh (Park Hae-joon). Keduanya telah memiliki seorang putra bernama Lee Joon-yeong (Jeon Jin-seo). Keluarga ini tampak sempurna, memiliki segalanya, termasuk karier yang sukses dan keluarga yang bahagia. Tetapi ternyata, Sun-woo malah dikhianati oleh suaminya sendiri.</p>
+      </div>
+    </div>   
+   </div> 
+  </div>
+
+<footer class="container-fluid text-center">
+  <p>Contact Us</p>
+</footer>
+
+</body>
+</html>
